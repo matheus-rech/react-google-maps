@@ -1,8 +1,16 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["./src/**/*", "./types/**/*"],
-  "exclude": ["./src/**/__*__", "./examples"],
+  "include": [
+    "./src/**/*",
+    "./types/**/*"
+  ],
+  "exclude": [
+    "./src/**/__*__",
+    "./examples"
+  ],
   "compilerOptions": {
-    "noEmit": false
+    "noEmit": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   }
 }
